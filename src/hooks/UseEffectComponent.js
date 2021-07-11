@@ -36,6 +36,7 @@ export default function UseEffectComponent() {
 
 	return (
 		<div>
+			<p>Use Effect</p>
 			<Button onClick={() => setResourceType("posts")}>Posts</Button>
 			<Button onClick={() => setResourceType("users")}>Users</Button>
 			<Button onClick={() => setResourceType("comments")}>Comments</Button>
