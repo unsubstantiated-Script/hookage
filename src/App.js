@@ -1,6 +1,7 @@
 import "./App.css";
 import { Container } from "reactstrap";
 import UseStateComponent from "./hooks/UseStateComponent";
+import UseEffectComponent from "./hooks/UseEffectComponent";
 
 function App() {
 	return (
@@ -9,8 +10,11 @@ function App() {
 				{" "}
 				<h1>Hooks testing!</h1>
 				<ol>
-					<li>
+					<li className="my-3">
 						<UseStateComponent />
+					</li>
+					<li className="my-3">
+						<UseEffectComponent />
 					</li>
 				</ol>
 			</Container>
