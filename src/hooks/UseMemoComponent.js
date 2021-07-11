@@ -10,7 +10,7 @@ const UseMemoComponent = () => {
 		return slowFunction(number);
 	}, [number]); //dependencies always show when this should be running again
 
-	//Wrapping this in useMemo to avoid the conflict of React updating the entire component even though nothing is changing here. Thus, this only will change when the item is manipulated!
+	//Wrapping this in useMemo to avoid the conflict of React updating the entire component even though nothing is changing here. Thus, this only will change when the item is manipulated! So, we get the exact same JS reference everytime unless it actually changes!
 	const themeStyles = useMemo(() => {
 		return {
 			backgroundColor: dark ? "black" : "white",

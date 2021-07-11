@@ -3,6 +3,7 @@ import { Container } from "reactstrap";
 import UseStateComponent from "./hooks/UseStateComponent";
 import UseEffectComponent from "./hooks/UseEffectComponent";
 import UseMemoComponent from "./hooks/UseMemoComponent";
+import UseRefComponent from "./hooks/UseRefComponent";
 
 function App() {
 	return (
@@ -19,6 +20,9 @@ function App() {
 					</li>
 					<li className="my-3">
 						<UseMemoComponent />
+					</li>
+					<li className="my-3">
+						<UseRefComponent />
 					</li>
 				</ol>
 			</Container>
