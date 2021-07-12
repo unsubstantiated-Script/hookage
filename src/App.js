@@ -6,6 +6,7 @@ import UseMemoComponent from "./hooks/UseMemoComponent";
 import UseRefComponent from "./hooks/UseRefComponent";
 import UseContextComponent from "./hooks/useContext/UseContextComponent";
 import UseReducerComponent from "./hooks/useReducer/UseReducerComponent";
+import UseCallbackComponent from "./hooks/useCallback/UseCallbackComponent";
 
 function App() {
 	return (
@@ -31,6 +32,9 @@ function App() {
 					</li>
 					<li className='my-3'>
 						<UseReducerComponent />
+					</li>
+					<li className='my-3'>
+						<UseCallbackComponent />
 					</li>
 				</ol>
 			</Container>
