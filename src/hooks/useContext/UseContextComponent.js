@@ -6,6 +6,7 @@ import { ThemeProvider } from "./ThemeContext";
 export default function UseContextComponent() {
 	return (
 		<>
+			<p>Use Context</p>
 			<ThemeProvider>
 				<FunctionContextComponent />
 			</ThemeProvider>

@@ -5,6 +5,7 @@ import UseEffectComponent from "./hooks/UseEffectComponent";
 import UseMemoComponent from "./hooks/UseMemoComponent";
 import UseRefComponent from "./hooks/UseRefComponent";
 import UseContextComponent from "./hooks/useContext/UseContextComponent";
+import UseReducerComponent from "./hooks/useReducer/UseReducerComponent";
 
 function App() {
 	return (
@@ -27,6 +28,9 @@ function App() {
 					</li>
 					<li className='my-3'>
 						<UseContextComponent />
+					</li>
+					<li className='my-3'>
+						<UseReducerComponent />
 					</li>
 				</ol>
 			</Container>

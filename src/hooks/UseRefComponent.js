@@ -29,6 +29,7 @@ const UseRefComponent = () => {
 
 	return (
 		<>
+			<p>Use Ref</p>
 			<input
 				ref={inputRef}
 				value={name}
