@@ -12,6 +12,7 @@ export const { ADD_TODO, TOGGLE_TODO, DELETE_TODO } = ACTIONS;
 function reducer(todos, action) {
 	switch (action.type) {
 		case ADD_TODO:
+			//spreading the current todo arrays to add in a new one
 			return [...todos, newTodo(action.payload.name)];
 		case TOGGLE_TODO:
 			return todos.map((todo) => {
@@ -26,6 +27,7 @@ function reducer(todos, action) {
 			//returning all the todos but the one we want to remove...
 			return todos.filter((todo) => todo.id !== action.payload.id);
 		default:
+			//probably not the best default, but it is one technique?
 			return todos;
 	}
 }
