@@ -4,6 +4,7 @@ import UseStateComponent from "./hooks/UseStateComponent";
 import UseEffectComponent from "./hooks/UseEffectComponent";
 import UseMemoComponent from "./hooks/UseMemoComponent";
 import UseRefComponent from "./hooks/UseRefComponent";
+import UseContextComponent from "./hooks/useContext/UseContextComponent";
 
 function App() {
 	return (
@@ -12,17 +13,20 @@ function App() {
 				{" "}
 				<h1>Hooks testing!</h1>
 				<ol>
-					<li className="my-3">
+					<li className='my-3'>
 						<UseStateComponent />
 					</li>
-					<li className="my-3">
+					<li className='my-3'>
 						<UseEffectComponent />
 					</li>
-					<li className="my-3">
+					<li className='my-3'>
 						<UseMemoComponent />
 					</li>
-					<li className="my-3">
+					<li className='my-3'>
 						<UseRefComponent />
+					</li>
+					<li className='my-3'>
+						<UseContextComponent />
 					</li>
 				</ol>
 			</Container>
